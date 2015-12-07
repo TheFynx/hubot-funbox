@@ -23,6 +23,6 @@ minionsPics = [
 ]
 
 module.exports = (robot) ->
-  robot.hear /(m|M)inion(s))/i, (msg) ->
+  robot.hear /(m|M)inion(s|)/i, (msg) ->
     msg.send msg.random minionsPics
 
