@@ -35,10 +35,8 @@ module.exports = (robot) ->
   robot.hear /real(c|C)offee/i, (msg) ->
     msg.send msg.random coffeePics
 
-module.exports = (robot) ->
   robot.hear /real(d|D)rink/i, (msg) ->
     msg.send msg.random drinkPics
 
-module.exports = (robot) ->
   robot.hear /real(w|W)ine/i, (msg) ->
     msg.send msg.random winePics
