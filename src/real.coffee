@@ -32,13 +32,13 @@ winePics = [
 ]
 
 module.exports = (robot) ->
-  robot.hear /real(coffee|Coffee)/i, (msg) ->
+  robot.hear /real(c|C)offee/i, (msg) ->
     msg.send msg.random coffeePics
 
 module.exports = (robot) ->
-  robot.hear /real(drink|Drink)/i, (msg) ->
+  robot.hear /real(d|D)rink/i, (msg) ->
     msg.send msg.random drinkPics
 
 module.exports = (robot) ->
-  robot.hear /real(wine|Wine)/i, (msg) ->
+  robot.hear /real(w|W)ine/i, (msg) ->
     msg.send msg.random winePics

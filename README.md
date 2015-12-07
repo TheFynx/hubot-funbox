@@ -2,6 +2,7 @@
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
+[![Dependency Status][david-image]][david-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 
 A box filled with SFW fun for [Hubot](https://hubot.github.com).
@@ -25,7 +26,9 @@ Then add the `hubot-funbox` entry to the `external-scripts.json` file and run `n
 
 [npm-url]: https://www.npmjs.org/package/hubot-funbox
 [npm-image]: http://img.shields.io/npm/v/hubot-funbox.svg?style=flat
-[travis-url]: https://travis-ci.org/thefynx/hubot-funbox
-[travis-image]: http://img.shields.io/travis/thefynx/hubot-funbox/master.svg?style=flat
+[travis-url]: https://travis-ci.org/TheFynx/hubot-funbox
+[travis-image]: https://travis-ci.org/TheFynx/hubot-funbox.svg?branch=master
 [coveralls-url]: https://coveralls.io/r/thefynx/hubot-funbox
 [coveralls-image]: http://img.shields.io/coveralls/thefynx/hubot-funbox/master.svg?style=flat
+[david-url]:https://david-dm.org/thefynx/hubot-funbox
+[david-image]: https://david-dm.org/thefynx/hubot-funbox.svg
