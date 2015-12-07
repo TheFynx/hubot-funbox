@@ -1,6 +1,7 @@
 chai = require 'chai'
 sinon = require 'sinon'
 chai.use require 'sinon-chai'
+coffeeScript = require('coffee-script')
 
 expect = chai.expect
 
