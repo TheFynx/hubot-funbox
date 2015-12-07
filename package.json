@@ -1,0 +1,40 @@
+{
+  "name": "hubot-funbox",
+  "description": "A small box filled with SFW fun.",
+  "version": "1.0.0",
+  "author": "Levi Smith <https://github.com/thefynx>",
+  "license": "MIT",
+
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thefynx/hubot-funbox.git"
+  },
+
+  "bugs": {
+    "url": "https://github.com/thefynx/hubot-funbox/issues"
+  },
+
+  "dependencies": {
+    "coffee-script": "~1.6"
+  },
+
+  "devDependencies": {
+    "mocha": "*",
+    "mocha-lcov-reporter": "*",
+    "chai": "*",
+    "sinon-chai": "*",
+    "sinon": "*",
+    "coveralls": "^2.10.1"
+  },
+
+  "main": "index.coffee",
+
+  "scripts": {
+    "test": "script/test"
+  }
+}
