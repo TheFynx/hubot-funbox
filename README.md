@@ -2,7 +2,6 @@
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
-[![Dependency Status][daviddm-image]][daviddm-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 
 A box filled with SFW fun for [Hubot](https://hubot.github.com).
