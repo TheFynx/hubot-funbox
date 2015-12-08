@@ -4,25 +4,20 @@
   "version": "1.0.0",
   "author": "Levi Smith <https://github.com/thefynx>",
   "license": "MIT",
-
   "keywords": [
     "hubot",
     "hubot-scripts"
   ],
-
   "repository": {
     "type": "git",
     "url": "git://github.com/thefynx/hubot-funbox.git"
   },
-
   "bugs": {
     "url": "https://github.com/thefynx/hubot-funbox/issues"
   },
-
   "dependencies": {
     "coffee-script": "~1.6"
   },
-
   "devDependencies": {
     "mocha": "*",
     "mocha-lcov-reporter": "*",
@@ -31,10 +26,11 @@
     "sinon": "*",
     "coveralls": "^2.10.1"
   },
-
   "main": "index.coffee",
-
   "scripts": {
     "test": "script/test"
+  },
+  "directories": {
+    "test": "test"
   }
 }

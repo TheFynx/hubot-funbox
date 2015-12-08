@@ -1,8 +1,16 @@
 language: node_js
 node_js:
-      - "4.2.1"
-      - "0.12"
-      - "0.11"
-      - "0.10"
+- 4.2.1
+- '0.12'
+- '0.11'
+- '0.10'
 notifications:
-      email: false
+  email: false
+deploy:
+  provider: npm
+  email: levi@fynx.me
+  api_key:
+    secure: B9qcM/6pQiqMphRuQE6oWNfBuXeHClRqWmWCtegBilt6AhKTnbuaCoYfLcvLQ3t+3FZy9w66916z/JabBRxHagIi2gAXPmTRh4cpYgVFEqZ6XrqNBUDfEAmd0HOAZEoyiTPMhq1atp5JE2b/depJJkFeqWpnrcCAbU5+wNufVFTtGeJoBA0/6HQ3Up71Qabn+A6iUh94UUuR7eABwRMUBA1zLjqsMvXuFqpfA3uTKzqSYPL9P5qdr3/yC5gS7Pg/otrRIc3goXLhtFU2aJb48SBX1wD3BvSH/TSRtyBXNWn5gYm1ACN/GZnnOuk5ZAnFHRUo6wupRqeqf76TQRp50IH//yJyRsHtnGK/e1H3FzKFPSaPhkYNnJt0Jw0lO7iL8EW28WuXyHOkOqBK7frRSm53VWwDcQIqK882nnKEacRzz3yvgzyzasQHUIvwIN3B8REyspqD2rawH89Cq2CE3Ygi4ydEE0DvXaEiI1UcmDSic/y3Q2CLdJQOFvTeRnuPOH5ZIY1D8IU+vG6yXB60tjtBP1wI7bhNEqT9U/bwfpARA3XcYn7uc8zbSPTnTqZBq4RaEwDiIl97hhDqaA90M/9OvNp4ynI95VVRYa47RV0uCYjHane/6+BctaoB7Km0wqyFNvbCI7QCUcGor4WpN2VcA9vdPgtkUE4cFDdWyCQ=
+  on:
+    tags: true
+    repo: TheFynx/hubot-funbox
