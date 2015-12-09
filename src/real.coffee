@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   real(coffee|drink|wine) - Random Cinemagraph
+#   real(coffee|drink|wine|food) - Random Cinemagraph
 #
 # Author:
 #   thefynx

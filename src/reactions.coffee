@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   hubot react <reaction> - (fail|fangirling|excited|slowclap|freakout|success|bubble)
+#   hubot react <reaction> - (fail|fangirling|excited|slowclap|freakout|success|bubble|micdrop)
 #
 # Author:
 #   thefynx
