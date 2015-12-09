@@ -15,7 +15,8 @@
 
 failPics=[
     "https://media.giphy.com/media/O5R4RttrYdBMk/giphy.gif",
-    "https://media.giphy.com/media/ujlfeMVIpFiE/giphy.gif"
+    "https://media.giphy.com/media/ujlfeMVIpFiE/giphy.gif",
+    "https://media3.giphy.com/media/eBi558sgJjdn2/200.gif"
 ]
 
 fangirlingPics=[
@@ -24,26 +25,38 @@ fangirlingPics=[
 ]
 
 excitedPics=[
-    "https://media.giphy.com/media/A3RyFua6XWG76/giphy.gif"
+    "https://media.giphy.com/media/A3RyFua6XWG76/giphy.gif",
+    "https://media4.giphy.com/media/xTk9ZTOGgL1W84vX7q/200.gif"
 ]
 
 slowclapPics=[
     "https://media.giphy.com/media/URmJvPe1VXIUE/giphy.gif",
-    "https://media.giphy.com/media/5BgqPLsvG8dMI/giphy.gif"
+    "https://media.giphy.com/media/5BgqPLsvG8dMI/giphy.gif",
+    "https://media.giphy.com/media/7RDmtzzsSn99RvzBPq/giphy.gif"
 ]
 
 freakoutPics=[
-    "https://media.giphy.com/media/r5jHiw40rx5OE/giphy.gif"
+    "https://media.giphy.com/media/r5jHiw40rx5OE/giphy.gif",
+    "https://media.giphy.com/media/lKZEeXJGhU1d6/giphy.gif"
 ]
 
 successPics=[
-    "https://media.giphy.com/media/GiNyo8KD5j9mM/giphy.gif"
+    "https://media.giphy.com/media/GiNyo8KD5j9mM/giphy.gif",
+    "https://media.giphy.com/media/5xJIIRPC23yZG/giphy.gif",
+    "https://media.giphy.com/media/opmIBtljGbwZi/giphy.gif"
 ]
 
 bubblePics=[
     "https://media.giphy.com/media/6Yp3H44rgBHZm/giphy.gif",
     "https://media.giphy.com/media/j0YV0HqO178Gs/giphy.gif",
     "https://media.giphy.com/media/FMTTUXX6XhwZi/giphy.gif"
+]
+
+micdropPics=[
+    "https://media.giphy.com/media/DfbpTbQ9TvSX6/giphy.gif",
+    "https://media.giphy.com/media/H76LfSzyXeCnm/giphy.gif",
+    "https://media.giphy.com/media/xTiTnI4bir5NeN5z6o/giphy.gif",
+    "https://media.giphy.com/media/rfWAomOTPeOo8/giphy.gif"
 ]
 
 module.exports = (robot) ->
@@ -67,3 +80,6 @@ module.exports = (robot) ->
 
     robot.respond /react (bubbles)/i, (msg) ->
         msg.send msg.random bubblePics
+
+    robot.respond /react (micdrop)/i, (msg) ->
+        msg.send msg.random micdropPics
