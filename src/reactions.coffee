@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   hubot react <reaction> - (fail|fangirling|excited|slowclap|freakout|success|bubble|micdrop)
+#   hubot react <reaction> - (fail|fangirling|excited|slowclap|freakout|success|bubble|micdrop|facepalm|high five)
 #
 # Author:
 #   thefynx
@@ -32,7 +32,8 @@ excitedPics=[
 slowclapPics=[
     "https://media.giphy.com/media/URmJvPe1VXIUE/giphy.gif",
     "https://media.giphy.com/media/5BgqPLsvG8dMI/giphy.gif",
-    "https://media.giphy.com/media/7RDmtzzsSn99RvzBPq/giphy.gif"
+    "https://media.giphy.com/media/7RDmtzzsSn99RvzBPq/giphy.gif",
+    "https://media.giphy.com/media/TbRXNJJJbgIkE/giphy.gif"
 ]
 
 freakoutPics=[
@@ -59,6 +60,24 @@ micdropPics=[
     "https://media.giphy.com/media/rfWAomOTPeOo8/giphy.gif"
 ]
 
+high5Pics=[
+    "https://media.giphy.com/media/opmIBtljGbwZi/giphy.gif",
+    "https://media.giphy.com/media/LZGipmRpX6uwE/giphy.gif",
+    "https://media.giphy.com/media/vBT7tmcliexTq/giphy.gif",
+    "https://media.giphy.com/media/9UsmgKh8bwjIs/giphy.gif",
+    "https://media.giphy.com/media/CDMz3fckRXXDG/giphy.gif"
+]
+
+facepalmPics=[
+    "https://media.giphy.com/media/12soWQ91xpTDVu/giphy.gif",
+    "https://media.giphy.com/media/tB083WSscLjqw/giphy.gif",
+    "https://media.giphy.com/media/QajHhLKW3VRcs/giphy.gif",
+    "https://media.giphy.com/media/3xz2BLBOt13X9AgjEA/giphy.gif",
+    "https://media.giphy.com/media/5xaOcLtop2JSKbnCBoY/giphy.gif",
+    "https://media.giphy.com/media/gnJgBlPgHtcnS/giphy.gif",
+    "https://media.giphy.com/media/qGrbNfcDRQohO/giphy.gif"
+]
+
 module.exports = (robot) ->
     robot.respond /react (fail)/i, (msg) ->
         msg.send msg.random failPics
@@ -83,3 +102,9 @@ module.exports = (robot) ->
 
     robot.respond /react (micdrop)/i, (msg) ->
         msg.send msg.random micdropPics
+
+    robot.respond /react (high five|high 5)/i, (msg) ->
+        msg.send msg.random high5Pics
+
+    robot.respond /react (facepalm|fp|oh no)/i, (msg) ->
+        msg.send msg.random facepalmPics
