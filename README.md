@@ -24,6 +24,36 @@ Then add the `hubot-funbox` entry to the `external-scripts.json` file and run `n
 
     ["hubot-funbox"]
 
+
+## Usage
+### React
+To see all reactions please use hubot help.
+
+```shell
+User: hubot react high five
+Hubot> https://media.giphy.com/media/9UsmgKh8bwjIs/giphy.gif
+```
+
+### Minions
+Just mention minion(s) and they will appear.
+
+### Responder
+
+```shell
+User: bad hubot
+Hubot> * spits out some printer ink
+
+User: good hubot
+Hubot> * is becoming sentient
+```
+
+### Real (Cinemagraph)
+```shell
+User: hubot realDrink
+Hubot> http://i.imgur.com/QIys4w0.gif
+```
+
+
 [npm-url]: https://www.npmjs.org/package/hubot-funbox
 [npm-image]: http://img.shields.io/npm/v/hubot-funbox.svg?style=flat
 [travis-url]: https://travis-ci.org/TheFynx/hubot-funbox
