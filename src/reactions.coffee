@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   hubot react <reaction> - (fail|fangirling|excited|slowclap|freakout|success|bubble|micdrop|facepalm|high five)
+#   hubot react <reaction> - (fail|fangirling|excited|slowclap|freakout|success|bubble|micdrop|facepalm|high five|bye)
 #
 # Author:
 #   thefynx
@@ -21,7 +21,10 @@ failPics=[
 
 fangirlingPics=[
     "https://media.giphy.com/media/svdXAFilRe8eY/giphy.gif",
-    "http://replygif.net/i/1044.gif"
+    "http://replygif.net/i/1044.gif",
+    "https://media.giphy.com/media/8FRRpafSXxL6E/giphy.gif",
+    "https://media.giphy.com/media/zjumgQVDaY33q/giphy.gif",
+    "https://media.giphy.com/media/4czY0BHt7pEgU/giphy.gif"
 ]
 
 excitedPics=[
@@ -33,18 +36,29 @@ slowclapPics=[
     "https://media.giphy.com/media/URmJvPe1VXIUE/giphy.gif",
     "https://media.giphy.com/media/5BgqPLsvG8dMI/giphy.gif",
     "https://media.giphy.com/media/7RDmtzzsSn99RvzBPq/giphy.gif",
-    "https://media.giphy.com/media/TbRXNJJJbgIkE/giphy.gif"
+    "https://media.giphy.com/media/TbRXNJJJbgIkE/giphy.gif",
+    "https://media.giphy.com/media/WtBDAH97eXAmQ/giphy.gif",
+    "https://media.giphy.com/media/N1h5oPuTMfXCU/giphy.gif"
 ]
 
 freakoutPics=[
     "https://media.giphy.com/media/r5jHiw40rx5OE/giphy.gif",
-    "https://media.giphy.com/media/lKZEeXJGhU1d6/giphy.gif"
+    "https://media.giphy.com/media/lKZEeXJGhU1d6/giphy.gif",
+    "https://media.giphy.com/media/lNMyVfxjfzIJO/giphy.gif",
+    "https://media.giphy.com/media/qvedqh3Fv940E/giphy.gif",
+    "https://media.giphy.com/media/sMr8shhm57Lhe/giphy.gif",
+    "https://media.giphy.com/media/yEXPAGIytvqNy/giphy.gif",
+    "https://media.giphy.com/media/cUKnge27WMa4w/giphy.gif"
 ]
 
 successPics=[
     "https://media.giphy.com/media/GiNyo8KD5j9mM/giphy.gif",
     "https://media.giphy.com/media/5xJIIRPC23yZG/giphy.gif",
-    "https://media.giphy.com/media/opmIBtljGbwZi/giphy.gif"
+    "https://media.giphy.com/media/opmIBtljGbwZi/giphy.gif",
+    "https://media.giphy.com/media/eoxomXXVL2S0E/giphy.gif",
+    "https://media.giphy.com/media/aWRWTF27ilPzy/giphy.gif",
+    "https://media.giphy.com/media/LWVn0cCgpRt8Q/giphy.gif",
+    "https://media.giphy.com/media/vtVpHbnPi9TLa/giphy.gif"
 ]
 
 bubblePics=[
@@ -78,6 +92,15 @@ facepalmPics=[
     "https://media.giphy.com/media/qGrbNfcDRQohO/giphy.gif"
 ]
 
+byePics = [
+    "https://media.giphy.com/media/GB0lKzzxIv1te/giphy.gif",
+    "https://media.giphy.com/media/10QbzBy3KKAw36/giphy.gif",
+    "https://media.giphy.com/media/k5FHnkB3q4iys/giphy.gif",
+    "https://media.giphy.com/media/3oEduK0kW69xoX5Apq/giphy.gif",
+    "https://media.giphy.com/media/9VKMjT1rE61OM/giphy.gif",
+    "https://media.giphy.com/media/l0O9xk5sLcmWmOkaQ/giphy.gif"
+]
+
 module.exports = (robot) ->
     robot.respond /react (fail)/i, (msg) ->
         msg.send msg.random failPics
@@ -108,3 +131,6 @@ module.exports = (robot) ->
 
     robot.respond /react (facepalm|fp|oh no)/i, (msg) ->
         msg.send msg.random facepalmPics
+
+    robot.respond /react (bye|later|see ya)/i, (msg) ->
+        msg.send msg.random byePics

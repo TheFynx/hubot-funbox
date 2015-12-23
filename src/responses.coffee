@@ -60,10 +60,24 @@ goodResponses = [
     "♪~ ᕕ(ᐛ)ᕗ"
 ]
 
+awesomeResponses = [
+    "(☞ﾟ∀ﾟ)☞",
+    "♪~ ᕕ(ᐛ)ᕗ",
+    "☆*:.｡. o(≧▽≦)o .｡.:*☆",
+    "(((o(*ﾟ▽ﾟ*)o)))",
+    "d=(´▽｀)=b",
+    "(ˇ_ˇ”) ƪ(˘⌣˘)┐ ƪ(˘⌣˘)ʃ ┌(˘⌣˘)ʃ",
+    "\(._.\) ƪ(‘-’ ƪ)(ʃ ‘-’)ʃ (/._.)/",
+    "ヽ(⌐■_■)ノ♪♬",
+    "(°∀°)b"
+]
 
 module.exports = (robot) ->
-  robot.hear /(kicks|hits|bad)/, id: 'robot.name', (msg) ->
+  robot.hear /(kicks|hits|bad) (bot|hubot)/, (msg) ->
     msg.emote msg.random badResponses
 
-  robot.hear /(pats|hugs|good)/, id: 'robot.name', (msg) ->
+  robot.hear /(pats|hugs|good) (bot|hubot)/, (msg) ->
     msg.emote msg.random goodResponses
+
+  robot.hear /(awesome|way to go|good job)/, (msg) ->
+    msg.emote msg.random awesomeResponses
