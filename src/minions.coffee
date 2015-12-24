@@ -13,22 +13,9 @@
 # Author:
 #   thefynx
 
-minionsPics = [
-    "https://media.giphy.com/media/GiNyo8KD5j9mM/giphy.gif",
-    "https://media.giphy.com/media/7kr2R9KwOGMLe/giphy.gif",
-    "https://media.giphy.com/media/A3RyFua6XWG76/giphy.gif",
-    "https://media.giphy.com/media/O5R4RttrYdBMk/giphy.gif",
-    "https://media.giphy.com/media/r5jHiw40rx5OE/giphy.gif",
-    "https://media.giphy.com/media/svdXAFilRe8eY/giphy.gif",
-    "https://media.giphy.com/media/8cryeowqTlIs0/giphy.gif",
-    "https://media.giphy.com/media/lKZEeXJGhU1d6/giphy.gif",
-    "https://media.giphy.com/media/5xJIIRPC23yZG/giphy.gif",
-    "https://media.giphy.com/media/9eM1SWnqjrc40/giphy.gif",
-    "https://media.giphy.com/media/B1oGyOQcgd93a/giphy.gif",
-    "https://media.giphy.com/media/DfbpTbQ9TvSX6/giphy.gif"
-]
+minions = require './data/minions/minions.json'
 
 module.exports = (robot) ->
   robot.hear /(m|M)inion(s|)/i, (msg) ->
-    msg.send msg.random minionsPics
+    msg.send msg.random minions
 
