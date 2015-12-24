@@ -4,7 +4,7 @@ chai.use require 'sinon-chai'
 
 expect = chai.expect
 
-describe 'real', ->
+describe 'reactions', ->
   beforeEach ->
     @robot =
       hear: sinon.spy()
@@ -31,4 +31,16 @@ describe 'real', ->
 
   it 'registers a bubbles responder', ->
     expect(@robot.respond).to.have.been.calledWith(/react (bubbles|bubble)/i)
+
+  it 'registers a MicDrop responder', ->
+    expect(@robot.respond).to.have.been.calledWith(/react (micdrop|mic drop)/i)
+
+  it 'registers a highfive responder', ->
+    expect(@robot.respond).to.have.been.calledWith(/react (high five|high 5|high5|highfive|h5)/i)
+
+  it 'registers a facepalm responder', ->
+    expect(@robot.respond).to.have.been.calledWith(/react (facepalm|fp|oh no)/i)
+
+  it 'registers a bye responder', ->
+    expect(@robot.respond).to.have.been.calledWith(/react (bye|later|see ya)/i)
 

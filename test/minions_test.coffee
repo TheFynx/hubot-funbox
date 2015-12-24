@@ -14,5 +14,5 @@ describe 'minions', ->
 
     require('../src/minions')(@robot)
 
-  it 'registers a hear listener', ->
+  it 'registers minions listener', ->
     expect(@robot.hear).to.have.been.calledWith(/(m|M)inion(s|)/i)

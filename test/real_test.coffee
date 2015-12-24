@@ -13,14 +13,14 @@ describe 'real', ->
 
     require('../src/real')(@robot)
 
-  it 'registers a hear listener', ->
+  it 'registers a realCoffee listener', ->
     expect(@robot.hear).to.have.been.calledWith(/real(c|C)offee/i)
 
-  it 'registers a hear listener', ->
+  it 'registers a realBeer listener', ->
     expect(@robot.hear).to.have.been.calledWith(/real(b|B)eer/i)
 
-  it 'registers a hear listener', ->
+  it 'registers a realWine listener', ->
     expect(@robot.hear).to.have.been.calledWith(/real(w|W)ine/i)
   
-  it 'registers a hear listener', ->
+  it 'registers a realFood listener', ->
     expect(@robot.hear).to.have.been.calledWith(/real(f|F)ood/i)
