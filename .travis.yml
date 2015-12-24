@@ -13,4 +13,4 @@ deploy:
   on:
     tags: true
     repo: TheFynx/hubot-funbox
-    branch: breakout
+    branch: master
