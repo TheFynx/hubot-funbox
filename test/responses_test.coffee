@@ -11,7 +11,7 @@ describe 'responses', ->
     @msg =
       send: sinon.spy()
 
-    require('../src/real')(@robot)
+    require('../src/responses')(@robot)
 
   it 'registers a bad listener', ->
     expect(@robot.hear).to.have.been.calledWith(/(kicks|hits|bad) (bot|hubot)/)
