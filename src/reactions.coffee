@@ -13,124 +13,48 @@
 # Author:
 #   thefynx
 
-failPics=[
-    "https://media.giphy.com/media/O5R4RttrYdBMk/giphy.gif",
-    "https://media.giphy.com/media/ujlfeMVIpFiE/giphy.gif",
-    "https://media3.giphy.com/media/eBi558sgJjdn2/200.gif"
-]
-
-fangirlingPics=[
-    "https://media.giphy.com/media/svdXAFilRe8eY/giphy.gif",
-    "http://replygif.net/i/1044.gif",
-    "https://media.giphy.com/media/8FRRpafSXxL6E/giphy.gif",
-    "https://media.giphy.com/media/zjumgQVDaY33q/giphy.gif",
-    "https://media.giphy.com/media/4czY0BHt7pEgU/giphy.gif"
-]
-
-excitedPics=[
-    "https://media.giphy.com/media/A3RyFua6XWG76/giphy.gif",
-    "https://media4.giphy.com/media/xTk9ZTOGgL1W84vX7q/200.gif"
-]
-
-slowclapPics=[
-    "https://media.giphy.com/media/URmJvPe1VXIUE/giphy.gif",
-    "https://media.giphy.com/media/5BgqPLsvG8dMI/giphy.gif",
-    "https://media.giphy.com/media/7RDmtzzsSn99RvzBPq/giphy.gif",
-    "https://media.giphy.com/media/TbRXNJJJbgIkE/giphy.gif",
-    "https://media.giphy.com/media/WtBDAH97eXAmQ/giphy.gif",
-    "https://media.giphy.com/media/N1h5oPuTMfXCU/giphy.gif"
-]
-
-freakoutPics=[
-    "https://media.giphy.com/media/r5jHiw40rx5OE/giphy.gif",
-    "https://media.giphy.com/media/lKZEeXJGhU1d6/giphy.gif",
-    "https://media.giphy.com/media/lNMyVfxjfzIJO/giphy.gif",
-    "https://media.giphy.com/media/qvedqh3Fv940E/giphy.gif",
-    "https://media.giphy.com/media/sMr8shhm57Lhe/giphy.gif",
-    "https://media.giphy.com/media/yEXPAGIytvqNy/giphy.gif",
-    "https://media.giphy.com/media/cUKnge27WMa4w/giphy.gif"
-]
-
-successPics=[
-    "https://media.giphy.com/media/GiNyo8KD5j9mM/giphy.gif",
-    "https://media.giphy.com/media/5xJIIRPC23yZG/giphy.gif",
-    "https://media.giphy.com/media/opmIBtljGbwZi/giphy.gif",
-    "https://media.giphy.com/media/eoxomXXVL2S0E/giphy.gif",
-    "https://media.giphy.com/media/aWRWTF27ilPzy/giphy.gif",
-    "https://media.giphy.com/media/LWVn0cCgpRt8Q/giphy.gif",
-    "https://media.giphy.com/media/vtVpHbnPi9TLa/giphy.gif"
-]
-
-bubblePics=[
-    "https://media.giphy.com/media/6Yp3H44rgBHZm/giphy.gif",
-    "https://media.giphy.com/media/j0YV0HqO178Gs/giphy.gif",
-    "https://media.giphy.com/media/FMTTUXX6XhwZi/giphy.gif"
-]
-
-micdropPics=[
-    "https://media.giphy.com/media/DfbpTbQ9TvSX6/giphy.gif",
-    "https://media.giphy.com/media/H76LfSzyXeCnm/giphy.gif",
-    "https://media.giphy.com/media/xTiTnI4bir5NeN5z6o/giphy.gif",
-    "https://media.giphy.com/media/rfWAomOTPeOo8/giphy.gif"
-]
-
-high5Pics=[
-    "https://media.giphy.com/media/opmIBtljGbwZi/giphy.gif",
-    "https://media.giphy.com/media/LZGipmRpX6uwE/giphy.gif",
-    "https://media.giphy.com/media/vBT7tmcliexTq/giphy.gif",
-    "https://media.giphy.com/media/9UsmgKh8bwjIs/giphy.gif",
-    "https://media.giphy.com/media/CDMz3fckRXXDG/giphy.gif"
-]
-
-facepalmPics=[
-    "https://media.giphy.com/media/12soWQ91xpTDVu/giphy.gif",
-    "https://media.giphy.com/media/tB083WSscLjqw/giphy.gif",
-    "https://media.giphy.com/media/QajHhLKW3VRcs/giphy.gif",
-    "https://media.giphy.com/media/3xz2BLBOt13X9AgjEA/giphy.gif",
-    "https://media.giphy.com/media/5xaOcLtop2JSKbnCBoY/giphy.gif",
-    "https://media.giphy.com/media/gnJgBlPgHtcnS/giphy.gif",
-    "https://media.giphy.com/media/qGrbNfcDRQohO/giphy.gif"
-]
-
-byePics = [
-    "https://media.giphy.com/media/GB0lKzzxIv1te/giphy.gif",
-    "https://media.giphy.com/media/10QbzBy3KKAw36/giphy.gif",
-    "https://media.giphy.com/media/k5FHnkB3q4iys/giphy.gif",
-    "https://media.giphy.com/media/3oEduK0kW69xoX5Apq/giphy.gif",
-    "https://media.giphy.com/media/9VKMjT1rE61OM/giphy.gif",
-    "https://media.giphy.com/media/l0O9xk5sLcmWmOkaQ/giphy.gif"
-]
+bubbles = require './data/reactions/bubbles.json'
+excited = require './data/reactions/excited.json'
+fail = require './data/reactions/fail.json'
+freakout = require './data/reactions/freakout.json'
+micdrop = require './data/reactions/micdrop.json'
+bye = require './data/reactions/bye.json'
+facepalm = require './data/reactions/facepalm.json'
+fangirling = require './data/reactions/fangirling.json'
+highfive = require './data/reactions/highfive.json'
+success = require './data/reactions/success.json'
+slowclap = require './data/reactions/slowclap.json'
 
 module.exports = (robot) ->
     robot.respond /react (fail)/i, (msg) ->
-        msg.send msg.random failPics
+        msg.send msg.random fail
 
     robot.respond /react (fangirling)/i, (msg) ->
-        msg.send msg.random fangirlingPics
+        msg.send msg.random fangirling
 
-    robot.respond /react (excited)/i, (msg) ->
-        msg.send msg.random excitedPics
+    robot.respond /react (excited|happy)/i, (msg) ->
+        msg.send msg.random excited
 
     robot.respond /react (slowclap)/i, (msg) ->
-        msg.send msg.random slowclapPics
+        msg.send msg.random slowclap
 
-    robot.respond /react (freakout)/i, (msg) ->
-        msg.send msg.random freakoutPics
+    robot.respond /react (freakout|scared)/i, (msg) ->
+        msg.send msg.random freakout
 
-    robot.respond /react (success)/i, (msg) ->
-        msg.send msg.random successPics
+    robot.respond /react (success|awesome)/i, (msg) ->
+        msg.send msg.random success
 
-    robot.respond /react (bubbles)/i, (msg) ->
-        msg.send msg.random bubblePics
+    robot.respond /react (bubbles|bubble)/i, (msg) ->
+        msg.send msg.random bubble
 
-    robot.respond /react (micdrop)/i, (msg) ->
-        msg.send msg.random micdropPics
+    robot.respond /react (micdrop|mic drop)/i, (msg) ->
+        msg.send msg.random micdrop
 
-    robot.respond /react (high five|high 5)/i, (msg) ->
-        msg.send msg.random high5Pics
+    robot.respond /react (high five|high 5|high5|highfive|h5)/i, (msg) ->
+        msg.send msg.random highfive
 
     robot.respond /react (facepalm|fp|oh no)/i, (msg) ->
-        msg.send msg.random facepalmPics
+        msg.send msg.random facepalm
 
     robot.respond /react (bye|later|see ya)/i, (msg) ->
-        msg.send msg.random byePics
+        msg.send msg.random bye

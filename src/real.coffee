@@ -8,50 +8,29 @@
 #   None
 #
 # Commands:
-#   real(coffee|drink|wine|food) - Random Cinemagraph
+#   real(coffee|beer|wine|food) - Random Cinemagraph
 #
 # Author:
 #   thefynx
 
-coffeePics = [
-    "https://media.giphy.com/media/y9cDPkx8iBgY0/giphy.gif",
-    "https://media.giphy.com/media/D9KuYGLhSOKR2/giphy.gif",
-    "https://media.giphy.com/media/fCVnkRsHS3yNO/giphy.gif",
-    "https://media.giphy.com/media/esAw4trnVyNGM/giphy.gif"
-]
+coffee = require './data/cinemagraph/coffee.json'
 
-drinkPics = [
-    "https://media.giphy.com/media/I8yAGUxs1zFUk/giphy.gif",
-    "https://media.giphy.com/media/mnJRjgXZ2ooh2/giphy.gif",
-    "https://media.giphy.com/media/UNxEB1pzeaCis/giphy.gif",
-    "https://media.giphy.com/media/Y8QNbs2rL1KKs/giphy.gif",
-    "http://i.imgur.com/Np2lpzU.gif",
-    "http://i.imgur.com/QIys4w0.gif"
-]
+beer = require './data/cinemagraph/beer.json'
 
-winePics = [
-    "https://media.giphy.com/media/cBLJgR7S41dJK/giphy.gif",
-    "https://media.giphy.com/media/3zfox4LvqnIas/giphy.gif",
-    "https://media.giphy.com/media/iS93PNfmKBqus/giphy.gif"
-]
+wine = require './data/cinemagraph/wine.json'
 
-foodPics = [
-    "http://i.imgur.com/kY7oSkR.gif",
-    "http://i.imgur.com/EczC1lu.gif",
-    "http://i.imgur.com/TDxbC0N.gif",
-    "http://proof.nationalgeographic.com/files/2015/06/8icecreamcoffee1-lg.gif"
-]
+food = require './data/cinemagraph/food.json'
 
 
 module.exports = (robot) ->
   robot.hear /real(c|C)offee/i, (msg) ->
-    msg.send msg.random coffeePics
+    msg.send msg.random coffee
 
-  robot.hear /real(d|D)rink/i, (msg) ->
-    msg.send msg.random drinkPics
+  robot.hear /real(b|B)eer/i, (msg) ->
+    msg.send msg.random beer
 
   robot.hear /real(w|W)ine/i, (msg) ->
-    msg.send msg.random winePics
+    msg.send msg.random wine
 
   robot.hear /real(f|F)ood/i, (msg) ->
-    msg.send msg.random foodPics
+    msg.send msg.random food
