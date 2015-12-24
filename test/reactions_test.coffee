@@ -8,6 +8,7 @@ describe 'real', ->
   beforeEach ->
     @robot =
       hear: sinon.spy()
+      respond: sinon.spy()
     @msg =
       send: sinon.spy()
 
