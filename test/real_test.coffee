@@ -17,7 +17,10 @@ describe 'real', ->
     expect(@robot.hear).to.have.been.calledWith(/real(c|C)offee/i)
 
   it 'registers a hear listener', ->
-    expect(@robot.hear).to.have.been.calledWith(/real(d|D)rink/i)
+    expect(@robot.hear).to.have.been.calledWith(/real(b|B)eer/i)
 
   it 'registers a hear listener', ->
     expect(@robot.hear).to.have.been.calledWith(/real(w|W)ine/i)
+  
+  it 'registers a hear listener', ->
+    expect(@robot.hear).to.have.been.calledWith(/real(f|F)ood/i)
