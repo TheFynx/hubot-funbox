@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   hubot react <reaction> - (fail|fangirling|excited|slowclap|freakout|success|bubble|micdrop|facepalm|high five|bye)
+#   hubot react <reaction> - (fail|fangirling|excited|slowclap|freakout|success|bubble|micdrop|facepalm|high five|bye|smash|nailedit|sigh|seriously|dealwithit|thumbsup|sad)
 #
 # Author:
 #   thefynx
@@ -24,6 +24,13 @@ fangirling = require './data/reactions/fangirling.json'
 highfive = require './data/reactions/highfive.json'
 success = require './data/reactions/success.json'
 slowclap = require './data/reactions/slowclap.json'
+smash = require './data/reactions/smash.json'
+nailedt = require './data/reactions/nailedit.json'
+sigh = require './data/reactions/sigh.json'
+seriously = require './data/reactions/seriously.json'
+dealwithit = require './data/reactions/dealwithit.json'
+thumbsup = require './data/reactions/thumbsup.json'
+sad = require './data/reactions/sad.json'
 
 module.exports = (robot) ->
     robot.respond /react (fail)/i, (msg) ->
@@ -56,5 +63,24 @@ module.exports = (robot) ->
     robot.respond /react (facepalm|fp|oh no)/i, (msg) ->
         msg.send msg.random facepalm
 
-    robot.respond /react (bye|later|see ya)/i, (msg) ->
-        msg.send msg.random bye
+    robot.respond /react (smash|hulk smash)/i, (msg) ->
+        msg.send msg.random smash
+
+    robot.respond /react (nailedit|nailed it)/i, (msg) ->
+        msg.send msg.random nailedit
+
+    robot.respond /react (sigh|bored)/i, (msg) ->
+        msg.send msg.random sigh
+
+    robot.respond /react (seriously|for real|are you kidding me|wtf)/i, (msg) ->
+        msg.send msg.random seriously
+
+    robot.respond /react (dealwithit|deal with it|deal)/i, (msg) ->
+        msg.send msg.random dealwithit
+
+    robot.respond /react (thumbsup|thumbs up)/i, (msg) ->
+        msg.send msg.random thumbsup
+
+    robot.respond /react (sad)/i, (msg) ->
+        msg.send msg.random sad
+
