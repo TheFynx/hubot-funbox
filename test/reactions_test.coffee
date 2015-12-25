@@ -44,3 +44,21 @@ describe 'reactions', ->
   it 'registers a bye responder', ->
     expect(@robot.respond).to.have.been.calledWith(/react (bye|later|see ya)/i)
 
+  it 'registers a smash responder', ->
+    expect(@robot.respond).to.have.been.calledWith(/react (smash|hulk smash)/i)
+
+  it 'registers a sigh responder', ->
+    expect(@robot.respond).to.have.been.calledWith(/react (sigh|bored)/i)
+
+  it 'registers a seriously responder', ->
+    expect(@robot.respond).to.have.been.calledWith(/react (seriously|for real|are you kidding me|wtf)/i)
+
+  it 'registers a dealwithit responder', ->
+    expect(@robot.respond).to.have.been.calledWith(/react (dealwithit|deal with it|deal)/i)
+
+  it 'registers a thumbsup responder', ->
+    expect(@robot.respond).to.have.been.calledWith(/react (thumbsup|thumbs up)/i)
+
+  it 'registers a sad responder', ->
+    expect(@robot.respond).to.have.been.calledWith(/react (sad)/i)
+
