@@ -15,7 +15,7 @@
 
 coffee = require './data/cinemagraph/coffee.json'
 beer = require './data/cinemagraph/beer.json'
-liquor = require './data/cinemagraph/liqour.json'
+liquor = require './data/cinemagraph/liquor.json'
 city = require './data/cinemagraph/city.json'
 wine = require './data/cinemagraph/wine.json'
 food = require './data/cinemagraph/food.json'
