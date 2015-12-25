@@ -63,6 +63,9 @@ module.exports = (robot) ->
     robot.respond /react (facepalm|fp|oh no)/i, (msg) ->
         msg.send msg.random facepalm
 
+    robot.respond /react (bye|later|see ya)/i, (msg) ->
+        msg.send msg.random bye
+
     robot.respond /react (smash|hulk smash)/i, (msg) ->
         msg.send msg.random smash
 
