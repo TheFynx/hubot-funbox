@@ -50,6 +50,9 @@ describe 'reactions', ->
   it 'registers a sigh responder', ->
     expect(@robot.respond).to.have.been.calledWith(/react (sigh|bored)/i)
 
+  it 'registers a nailed it responder', ->
+    expect(@robot.respond).to.have.been.calledWith(/react (nailedit|nailed it)/i)
+
   it 'registers a seriously responder', ->
     expect(@robot.respond).to.have.been.calledWith(/react (seriously|for real|are you kidding me|wtf)/i)
 

@@ -25,7 +25,7 @@ highfive = require './data/reactions/highfive.json'
 success = require './data/reactions/success.json'
 slowclap = require './data/reactions/slowclap.json'
 smash = require './data/reactions/smash.json'
-nailedt = require './data/reactions/nailedit.json'
+nailedit = require './data/reactions/nailedit.json'
 sigh = require './data/reactions/sigh.json'
 seriously = require './data/reactions/seriously.json'
 dealwithit = require './data/reactions/dealwithit.json'
@@ -84,6 +84,6 @@ module.exports = (robot) ->
     robot.respond /react (thumbsup|thumbs up)/i, (msg) ->
         msg.send msg.random thumbsup
 
-    robot.respond /react (sad)/i, (msg) ->
+    robot.respond /react (sad|cry)/i, (msg) ->
         msg.send msg.random sad
 
