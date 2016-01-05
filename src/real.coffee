@@ -20,7 +20,7 @@ city = require './data/cinemagraph/city.json'
 wine = require './data/cinemagraph/wine.json'
 food = require './data/cinemagraph/food.json'
 martini = require './data/cinemagraph/martini.json'
-food = require './data/cinemagraph/vodka.json'
+vodka = require './data/cinemagraph/vodka.json'
 
 
 module.exports = (robot) ->
