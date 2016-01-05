@@ -19,6 +19,8 @@ liquor = require './data/cinemagraph/liquor.json'
 city = require './data/cinemagraph/city.json'
 wine = require './data/cinemagraph/wine.json'
 food = require './data/cinemagraph/food.json'
+martini = require './data/cinemagraph/martini.json'
+food = require './data/cinemagraph/vodka.json'
 
 
 module.exports = (robot) ->
@@ -39,3 +41,9 @@ module.exports = (robot) ->
 
   robot.hear /real(f|F)ood/i, (msg) ->
     msg.send msg.random food
+
+  robot.hear /real(m|M)artini/i, (msg) ->
+    msg.send msg.random martini
+
+  robot.hear /real(v|V)odka/i, (msg) ->
+    msg.send msg.random vodka

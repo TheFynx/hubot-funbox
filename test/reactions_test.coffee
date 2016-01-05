@@ -65,3 +65,15 @@ describe 'reactions', ->
   it 'registers a sad responder', ->
     expect(@robot.respond).to.have.been.calledWith(/react (sad)/i)
 
+  it 'registers a dissapoint responder', ->
+    expect(@robot.respond).to.have.been.calledWith(/react (dissapoint|dissapointed|upset)/i)
+
+  it 'registers a impatient responder', ->
+    expect(@robot.respond).to.have.been.calledWith(/react (impatient|taking too long|speed it up|faster)/i)
+
+  it 'registers a guilty responder', ->
+    expect(@robot.respond).to.have.been.calledWith(/react (guilty|not me)/i)
+
+  it 'registers a nope responder', ->
+    expect(@robot.respond).to.have.been.calledWith(/react (nope|no way)/i)
+

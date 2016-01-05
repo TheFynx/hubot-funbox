@@ -21,3 +21,6 @@ describe 'responses', ->
 
   it 'registers a awesome listener', ->
     expect(@robot.hear).to.have.been.calledWith(/(awesome|way to go|good job)/)
+
+  it 'registers a abides listener', ->
+    expect(@robot.hear).to.have.been.calledWith(/(dude abides|he abides|the dude|big lebowski)/)
