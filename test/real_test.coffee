@@ -30,3 +30,10 @@ describe 'real', ->
 
   it 'registers a realFood listener', ->
     expect(@robot.hear).to.have.been.calledWith(/real(f|F)ood/i)
+
+  it 'registers a realVodka listener', ->
+   expect(@robot.hear).to.have.been.calledWith(/real(v|V)odka/i)
+
+  it 'registers a realMartini listener', ->
+    expect(@robot.hear).to.have.been.calledWith(/real(m|M)artini/i)
+
