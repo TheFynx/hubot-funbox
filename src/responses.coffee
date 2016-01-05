@@ -13,10 +13,9 @@
 #   thefynx
 
 badResponses = require './data/responses/bad.json'
-
 goodResponses = require './data/responses/good.json'
-
 awesomeResponses = require './data/responses/awesome.json'
+abidesResponses = require './data/responses/abides.json'
 
 module.exports = (robot) ->
   robot.hear /(kicks|hits|bad) (bot|hubot)/, (msg) ->
@@ -27,3 +26,6 @@ module.exports = (robot) ->
 
   robot.hear /(awesome|way to go|good job)/, (msg) ->
     msg.emote msg.random awesomeResponses
+
+  robot.hear /(dude abides|he abides|the dude|big lebowski)/, (msg) ->
+    msg.emote msg.random abidesResponses

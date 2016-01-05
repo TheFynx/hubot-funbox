@@ -31,6 +31,10 @@ seriously = require './data/reactions/seriously.json'
 dealwithit = require './data/reactions/dealwithit.json'
 thumbsup = require './data/reactions/thumbsup.json'
 sad = require './data/reactions/sad.json'
+dissapoint = require './data/reactions/dissapoint.json'
+impatient = require './data/reactions/impatient.json'
+guilty = require './data/reactions/guilty.json'
+nope = require './data/reactions/nope.json'
 
 module.exports = (robot) ->
     robot.respond /react (fail)/i, (msg) ->
@@ -86,4 +90,16 @@ module.exports = (robot) ->
 
     robot.respond /react (sad|cry)/i, (msg) ->
         msg.send msg.random sad
+
+    robot.respond /react (dissapoint|dissapointed|upset)/i, (msg) ->
+        msg.send msg.random dissapoint
+
+    robot.respond /react (guilty|not me)/i, (msg) ->
+        msg.send msg.random guilty
+
+    robot.respond /react (impatient|taking too long|speed it up|faster)/i, (msg) ->
+        msg.send msg.random impatient
+
+    robot.respond /react (nope|no way)/i, (msg) ->
+        msg.send msg.random nope
 
