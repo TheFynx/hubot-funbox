@@ -65,8 +65,8 @@ describe 'reactions', ->
   it 'registers a sad responder', ->
     expect(@robot.respond).to.have.been.calledWith(/react (sad|cry)/i)
 
-  it 'registers a dissapoint responder', ->
-    expect(@robot.respond).to.have.been.calledWith(/react (dissapoint|dissapointed|upset)/i)
+  it 'registers a disappoint responder', ->
+    expect(@robot.respond).to.have.been.calledWith(/react (disappoint|disappointed|upset)/i)
 
   it 'registers a impatient responder', ->
     expect(@robot.respond).to.have.been.calledWith(/react (impatient|taking too long|speed it up|faster)/i)
