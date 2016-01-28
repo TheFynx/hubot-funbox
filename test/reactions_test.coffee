@@ -21,10 +21,10 @@ describe 'reactions', ->
     expect(@robot.respond).to.have.been.calledWith(/react (fangirling)/i)
 
   it 'registers a slowclap responder', ->
-    expect(@robot.respond).to.have.been.calledWith(/react (slowclap)/i)
+    expect(@robot.respond).to.have.been.calledWith(/react (lowclap|clap|applause|slow clap/i)
 
   it 'registers a success responder', ->
-    expect(@robot.respond).to.have.been.calledWith(/react (slowclap|clap|applause|slow clap)/i)
+    expect(@robot.respond).to.have.been.calledWith(/react (success|awesome)/i)
 
   it 'registers a freakout responder', ->
     expect(@robot.respond).to.have.been.calledWith(/react (freakout|scared)/i)

@@ -14,7 +14,7 @@ Add 'hubot-funbox' to your `package.json` file, e.g.
   "dependencies": {
     "hubot": ">= 2.6.0 < 3.0.0",
     "hubot-scripts": ">= 2.5.0 < 3.0.0",
-    "hubot-funbox": "1.2.2"
+    "hubot-funbox": "1.0.11"
   }
 ```
 
