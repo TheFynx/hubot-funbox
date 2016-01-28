@@ -1,7 +1,7 @@
 {
   "name": "hubot-funbox",
   "description": "A small box filled with SFW fun.",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "author": "Levi Smith <https://github.com/thefynx>",
   "license": "MIT",
   "keywords": [
