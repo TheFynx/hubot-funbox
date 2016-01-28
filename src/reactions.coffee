@@ -46,7 +46,7 @@ module.exports = (robot) ->
     robot.respond /react (excited|happy)/i, (msg) ->
         msg.send msg.random excited
 
-    robot.respond /react (slowclap)/i, (msg) ->
+    robot.respond /react (slowclap|clap|applause|slow clap)/i, (msg) ->
         msg.send msg.random slowclap
 
     robot.respond /react (freakout|scared)/i, (msg) ->

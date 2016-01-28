@@ -28,4 +28,4 @@ module.exports = (robot) ->
     msg.emote msg.random awesomeResponses
 
   robot.hear /(dude abides|he abides|the dude|big lebowski)/, (msg) ->
-    msg.emote msg.random abidesResponses
+    msg.send msg.random abidesResponses

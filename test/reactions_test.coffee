@@ -24,7 +24,7 @@ describe 'reactions', ->
     expect(@robot.respond).to.have.been.calledWith(/react (slowclap)/i)
 
   it 'registers a success responder', ->
-    expect(@robot.respond).to.have.been.calledWith(/react (success|awesome)/i)
+    expect(@robot.respond).to.have.been.calledWith(/react (slowclap|clap|applause|slow clap)/i)
 
   it 'registers a freakout responder', ->
     expect(@robot.respond).to.have.been.calledWith(/react (freakout|scared)/i)
