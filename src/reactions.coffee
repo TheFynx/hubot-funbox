@@ -56,7 +56,7 @@ module.exports = (robot) ->
         msg.send msg.random success
 
     robot.respond /react (bubbles|bubble)/i, (msg) ->
-        msg.send msg.random bubble
+        msg.send msg.random bubbles
 
     robot.respond /react (micdrop|mic drop)/i, (msg) ->
         msg.send msg.random micdrop

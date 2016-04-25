@@ -24,26 +24,26 @@ vodka = require './data/cinemagraph/vodka.json'
 
 
 module.exports = (robot) ->
-  robot.hear /real(c|C)offee/i, (msg) ->
+  robot.hear /realcoffee/i, (msg) ->
     msg.send msg.random coffee
 
-  robot.hear /real(b|B)eer/i, (msg) ->
+  robot.hear /realbeer/i, (msg) ->
     msg.send msg.random beer
 
-  robot.hear /real(l|L)iquor/i, (msg) ->
+  robot.hear /realliquor|/i, (msg) ->
     msg.send msg.random liquor
 
-  robot.hear /real(c|C)ity/i, (msg) ->
+  robot.hear /realcity/i, (msg) ->
     msg.send msg.random city
 
-  robot.hear /real(w|W)ine/i, (msg) ->
+  robot.hear /realwine/i, (msg) ->
     msg.send msg.random wine
 
-  robot.hear /real(f|F)ood/i, (msg) ->
+  robot.hear /realfood/i, (msg) ->
     msg.send msg.random food
 
-  robot.hear /real(m|M)artini/i, (msg) ->
+  robot.hear /realmartini/i, (msg) ->
     msg.send msg.random martini
 
-  robot.hear /real(v|V)odka/i, (msg) ->
+  robot.hear /realvodka/i, (msg) ->
     msg.send msg.random vodka
