@@ -16,7 +16,7 @@
     "url": "https://github.com/thefynx/hubot-funbox/issues"
   },
   "dependencies": {
-    "coffee-script": "~1.6"
+    "coffee-script": "~1.12"
   },
   "devDependencies": {
     "mocha": "*",
